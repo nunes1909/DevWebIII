@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Projeto Biblioteca</title>
+  <script src="estilo.js"></script>
+</head>
+
+<body>
+
+  <div id="corpo" style="background: darkgrey;" class="container-fluid">
+
+    <div id="cabecalho" class="row" style="background: rgb(179, 58, 58);">
+      <div class="col-md-6">
+        <p>
+        <h1>Biblioteca Mundo das Traças</h1>
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <p>
+        <h2>Área de Login</h2>
+        </p>
+        <form class="form-inline">
+          <div class="form-group mb-2">
+            <label for="staticEmail2" class="sr-only">Login</label>
+            <input type="text" class="form-control" id="nomeid" placeholder="Login">
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="inputPassword2" class="sr-only">Senha</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Senha">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2" onclick="login();">Entrar</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div style="background: rgb(216, 216, 216);" class="row">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acervo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">VideoTeca</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Entre em Contato</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+      <p>
+      <h2>Visite o nosso Acervo Online</h2>
+      </p>
+    </div>
+
+    <div id="meio" class="row">
+
+      <div class="col-md-6" style="padding-top: 1%; padding-bottom: 1%;">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="livroid">Livro</label>
+              <input type="text" class="form-control" id="livroid" placeholder="Livro">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputAddress">Autor</label>
+              <input type="text" class="form-control" id="inputPassword4" placeholder="Autor">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Editora</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Editora">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Ano da Edição</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Ano da Edição">
+          </div>
+          <div class="form-row">
+
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">Pesquisar na Web</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Pesquisar</button>
+          
+        </form>
+      </div>
+
+      <div class="col-md-6" style="padding-top: 7%;">
+        <h2>Seja Bem-Vindo!</h2>
+        <p>Use o formulário ao lado para pesquisar o nosso Acervo Online!</p>
+        <script>
+          agora = new Date
+          document.write("Hoje é " + agora.getDate() + " de " + (agora.getMonth()+1) + " de " + agora.getFullYear())
+        </script>
+
+      </div>
+
+    </div>
+
+    <div id="rodape" class="row" style="background: brown; text-align: center; display: flex;">
+      <div style="align-self: flex-end;" class="col-md-3">
+        <h6>Endereço: Rua dos Bobos, Nº 0<br>
+          Porto Alegre - RS</h6>
+      </div>
+      <div style="padding: 0.5%;" class="col-md-6">
+        <h2>Biblioteca Mundo das Traças</h2>
+        <h6>Telefone/Whats: (11) 91111-1111</h6>
+      </div>
+      <div style="align-self: flex-end;" class="col-md-3">
+        <h6>Instagram/Facebook: MundoTraças<br>
+          Email: traças@traças.com
+        </h6>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

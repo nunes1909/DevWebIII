@@ -1,0 +1,30 @@
+/*Arquivo de formatação de elementos*/
+
+/*seletor composto*/
+h1,h2,h3{
+    color: black;
+    font-weight: bold;
+}
+
+/*seletor agregado*/
+
+.menu a{
+    background-color: brown;
+    color: darkcyan;
+    padding:  2px 5px;
+    border: solid;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color: darkgoldenrod;    
+}
+
+/*seletor de classe*/
+
+.tabela{
+    width: 300px;
+    border-radius: 10px;
+    background-color: darkseagreen;
+    color: white;
+}
